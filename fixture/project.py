@@ -16,8 +16,8 @@ class ProjectHelper:
 
     def open_manage_project_page(self):
         wd = self.app.wd
-        wd.find_element_by_xpath("//a[contains(@href, '/mantisbt-2.25.2/manage_overview_page.php')]").click()
-        wd.find_element_by_xpath("//a[contains(@href, '/mantisbt-2.25.2/manage_proj_page.php')]").click()
+        wd.find_element_by_xpath("//a[contains(@href, 'manage_overview_page.php')]").click()
+        wd.find_element_by_xpath("//a[contains(@href, 'manage_proj_page.php')]").click()
 
     def create_new_project(self, project: Project):
         wd = self.app.wd
